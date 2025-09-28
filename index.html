@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daniel Vargas Donaires - Coffee Time</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#2f3438;
+      --teal:#24b0a6;
+      --card:#1f2629;
+      --muted:#bfc6c8;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background:var(--bg);
+      color:#eef2f3;
+      line-height:1.45;
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:20px 3%;
+      max-width:1200px;
+      margin:0 auto;
+    }
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:56px;height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,#3a3f42,#000);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:var(--teal);
+      box-shadow:0 6px 18px rgba(0,0,0,0.6);
+    }
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:0.95rem}
+    nav a:hover{color:#fff}
+    /* Hero */
+    .hero{
+      max-width:1200px;
+      margin:12px auto;
+      display:grid;
+      grid-template-columns:1fr 480px;
+      gap:30px;
+      align-items:center;
+      padding:0 3%;
+    }
+    .hero-card{
+      background:rgba(255,255,255,0.03);
+      padding:36px;
+      border-radius:18px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.6);
+    }
+    .hero h1{margin:0 0 12px 0;font-family:"Pacifico",cursive;font-size:48px;color:#fff}
+    .hero p.lead{margin:0 0 20px 0;color:var(--muted)}
+    .cta{
+      display:inline-block;background:var(--teal);color:#fff;
+      padding:12px 18px;border-radius:10px;text-decoration:none;
+      font-weight:600;box-shadow:0 8px 18px rgba(36,176,166,0.18);
+    }
+    .hero-preview{border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center}
+    .hero-preview img{width:100%;border-radius:12px}
+    /* Sections */
+    .section{max-width:1200px;margin:36px auto;padding:0 3%}
+    .section h2{font-size:1.4rem;margin-bottom:12px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{
+      background:var(--card);padding:16px;border-radius:12px;
+      display:flex;flex-direction:column;align-items:center;text-align:center
+    }
+    .card img{width:100%;height:140px;object-fit:cover;border-radius:10px;margin-bottom:10px}
+    .card strong{color:#fff;display:block;margin-bottom:6px}
+    .card p{color:var(--muted);font-size:0.95rem;margin:0}
+    footer{
+      max-width:1200px;margin:28px auto 60px;padding:0 3%;
+      color:var(--muted);display:flex;justify-content:space-between;align-items:center;
+    }
+    @media(max-width:980px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">DV</div>
+    <div>
+      <div style="font-weight:600">Daniel Vargas Donaires</div>
+      <div style="font-size:0.82rem;color:var(--muted)">Coffee Time</div>
+    </div>
+  </div>
+  <nav>
+    <a href="https://daniel2901m.github.io/COFFE-TIME/">Inicio</a>
+    <a href="https://daniel2901m.github.io/Tipos-De-Cafe/">Tipos de Café</a>
+    <a href="https://daniel2901m.github.io/Beneficios/">Beneficios</a>
+    <a href="https://daniel2901m.github.io/TRABAJA-CON-NOSOTROS/">Trabaja con Nosotros</a>
+  </nav>
+</header>
+
+<!-- INICIO -->
+<section class="hero" id="home">
+  <div class="hero-card">
+    <h1>Coffee Time</h1>
+    <p class="lead">Bienvenido a la demo de sitio web de café. Explora el mundo del café, sus variedades y sus beneficios para la salud.</p>
+    <a class="cta" href="https://daniel2901m.github.io/Beneficios/">Ver Beneficios</a>
+  </div>
+  <aside class="hero-preview">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop" alt="Taza de café">
+  </aside>
+</section>
+
+<!-- SALUD -->
+<section class="section" id="health">
+  <h2>☕ Café y Bienestar</h2>
+  <p style="color:var(--muted);margin-bottom:18px">Descubre los beneficios del café para tu salud (consumo moderado).</p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800" alt="Energía">
+      <strong>1. Energía y concentración</strong>
+      <p>Aumenta la energía y el enfoque mental.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1483137140003-ae073b395549?w=800" alt="Ánimo">
+      <strong>2. Estado de ánimo</strong>
+      <p>Eleva el humor y reduce el cansancio.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800" alt="Cerebro">
+      <strong>3. Protege el cerebro</strong>
+      <p>Disminuye riesgo de Alzheimer y Parkinson.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" alt="Memoria">
+      <strong>4. Memoria</strong>
+      <p>Favorece la memoria a corto plazo.</p>
+    </div>
+    <div class="card">
+      <img src="https://i.postimg.cc/htgbTjWb/COFFE.jpg" alt="Antioxidantes">
+      <strong>5. Antioxidantes</strong>
+      <p>Aporta compuestos que combaten el envejecimiento celular.</p>
+    </div>
+    <div class="card">
+      <img src="https://i.postimg.cc/Nj9Y8g6h/cafe.jpg" alt="Corazón">
+      <strong>6. Corazón</strong>
+      <p>En moderación, ayuda a la salud cardiovascular.</p>
+    </div>
+    <div class="card">
+      <img src="https://i.postimg.cc/N0cVyYbS/Captura-de-pantalla-2025-09-28-015006.jpg" alt="Metabolismo">
+      <strong>7. Metabolismo</strong>
+      <p>Estimula la quema de calorías.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=800" alt="Diabetes">
+      <strong>8. Diabetes</strong>
+      <p>Reduce el riesgo de diabetes tipo 2.</p>
+    </div>
+    <div class="card">
+      <img src="https://i.postimg.cc/Sxf0fJXN/higado.jpg" alt="Hígado">
+      <strong>9. Hígado</strong>
+      <p>Protege contra enfermedades hepáticas.</p>
+    </div>
+    <div class="card">
+      <img src="https://i.postimg.cc/zBR0pcdb/Captura-de-pantalla-2025-09-28-015237.jpg" alt="Rendimiento físico">
+      <strong>10. Rendimiento físico</strong>
+      <p>Mejora la resistencia en actividades deportivas.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div><strong>Daniel Vargas Donaires</strong><br><small>Proyecto demostrativo</small></div>
+  <div>Contacto: <small>daniel@interprise.com</small></div>
+</footer>
+
+</body>
+</html>
